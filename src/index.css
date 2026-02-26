@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Sora Variable', sans-serif;
+}
+
+:root {
+  /* Neutrals */
+  --neutral-900: hsl(220, 13%, 9%);
+  --neutral-800: hsl(220, 10%, 14%);
+  --neutral-600: hsl(220, 7%, 28%);
+  --neutral-500: hsl(220, 6%, 44%);
+  --neutral-400: hsl(220, 5%, 58%);
+  --neutral-0: hsl(0, 0%, 98%);
+
+  /* Accent */
+  --accent-500: hsl(197, 85%, 52%);
+  --accent-300: hsl(197, 90%, 72%);
+
+  /* Error */
+  --red-500: hsl(4, 72%, 55%);
+
+  /* Correct */
+  --green-500: hsl(158, 64%, 48%);
+
+  /* Warning / Caret */
+  --amber-400: hsl(38, 92%, 60%);
+}
