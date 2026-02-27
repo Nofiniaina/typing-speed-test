@@ -1,8 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import "tailwindcss";
 
 body {
   font-family: 'Sora Variable', sans-serif;
@@ -21,12 +17,55 @@ body {
   --accent-500: hsl(197, 85%, 52%);
   --accent-300: hsl(197, 90%, 72%);
 
-  /* Error */
-  --red-500: hsl(4, 72%, 55%);
+}
 
-  /* Correct */
-  --green-500: hsl(158, 64%, 48%);
+@theme {
 
-  /* Warning / Caret */
-  --amber-400: hsl(38, 92%, 60%);
+  /* Semantic — Backgrounds */
+  --color-bg-base: var(--neutral-900);
+  /* page / app background */
+  --color-bg-surface: var(--neutral-800);
+  /* cards, modals, panels */
+  --color-bg-overlay: var(--neutral-600);
+  /* tooltips, dropdowns */
+
+  /* Semantic — Text */
+  --color-text-primary: var(--neutral-0);
+  /* main readable text */
+  --color-text-secondary: var(--neutral-400);
+  /* hints, labels, subtitles */
+  --color-text-muted: var(--neutral-500);
+  /* untyped / upcoming words */
+  --color-text-disabled: var(--neutral-600);
+  /* inactive UI elements */
+
+  /* Semantic — Interactive / Brand */
+  --color-primary: var(--accent-500);
+  /* buttons, links, focus rings */
+  --color-primary-hover: var(--accent-300);
+  /* hover state */
+
+  /* Semantic — Typing Feedback */
+  --color-correct: var(--green-500);
+  /* correctly typed characters */
+  --color-incorrect: var(--red-500);
+  /* mistyped characters */
+  --color-caret: var(--amber-400);
+  /* blinking cursor / caret */
+
+  /* Semantic — Status (reuse for UI alerts if needed) */
+  --color-error: var(--red-500);
+  /* error messages, form validation */
+  --color-warning: var(--amber-400);
+  /* warnings */
+  --color-success: var(--green-500);
+  /* success states */
+
+}
+
+@layer base {
+  body {
+    background-color: var(--neutral-900);
+    color: var(--neutral-0);
+  }
 }
